@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Result</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="quiz-body">
+
+<div class="quiz-container center">
+    <h1 class="quiz-title">🎉 Quiz Completed! 🎉</h1>
+    <p id="scoreText"></p>
+    <button class="btn" onclick="restartQuiz()">Try Again</button>
+    <button class="btn" onclick="backToPortfolio()">Back to Portfolio</button>
+</div>
+
+<script>
+function restartQuiz(){
+    window.location.href = 'quiz.html';
+}
+function backToPortfolio(){
+    window.location.href = '../index.html'; // adjust path if needed
+}
+</script>
+
+</body>
+</html>

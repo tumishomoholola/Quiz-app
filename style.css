@@ -1,0 +1,36 @@
+body, html {
+    margin:0; padding:0; font-family:'Poppins',sans-serif;
+    background:#FFF0F5; color:#333; transition:0.3s;
+}
+
+.screen { display: none; width:100%; min-height:100vh; }
+.screen.show { display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:20px; }
+.center-screen { text-align:center; }
+
+.game-card { background:#FFDAB9; border-radius:20px; padding:30px 40px; box-shadow:0 10px 25px rgba(0,0,0,0.1); max-width:500px; width:90%; margin:auto; }
+
+.title { font-size:2rem; margin-bottom:10px; animation:pulse 2s infinite; }
+.intro { margin-bottom:20px; font-size:1.1rem; }
+
+.btn { padding:12px 25px; border:none; border-radius:50px; background:#FFB6C1; color:#fff; font-weight:bold; cursor:pointer; transition:0.3s; margin:10px; }
+.btn:hover { background:#FF69B4; transform:scale(1.05); }
+
+.options, .rps-options, .coin-options, .memory-grid { display:flex; flex-direction:column; gap:15px; margin-top:15px; }
+
+.option-btn, .rps-btn, .coin-btn, .custom-btn {
+    background: #fff; color: #333; border: 2px solid #FF69B4; padding: 12px 20px; border-radius: 15px; cursor: pointer; font-weight: 700; font-size: 1.1rem; transition: 0.3s; text-align:center;
+}
+.option-btn:hover, .rps-btn:hover, .coin-btn:hover, .custom-btn:hover { background:#FF69B4; color:#fff; transform: scale(1.05); }
+
+.progress-bar { background:#ffe4e1; height:10px; border-radius:10px; margin-bottom:20px; }
+.progress-bar-inner { height:100%; width:0%; background:#FF69B4; border-radius:10px; transition:width 0.5s ease; }
+
+.memory-grid { display:grid; grid-template-columns: repeat(3, 1fr); gap:10px; }
+
+.memory-grid button {
+    padding:20px; border-radius:10px; font-weight:700; font-size:1rem; background:#fff; border:2px solid #FF69B4; cursor:pointer;
+}
+
+.memory-grid button:hover { background:#FF69B4; color:#fff; transform:scale(1.05); }
+
+@keyframes pulse { 0%{transform:scale(1);} 50%{transform:scale(1.05);} 100%{transform:scale(1);} }
